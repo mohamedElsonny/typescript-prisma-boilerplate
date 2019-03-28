@@ -1,0 +1,24 @@
+type Mutation {
+  signUp(data: SignUpUserInput): User
+  login(data: LoginUserInput): User
+}
+
+input SignUpUserInput {
+  name: String!
+  email: String!
+  password: String!
+}
+
+input LoginUserInput {
+  email: String!
+  password: String!
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  token: String
+  createdAt: String
+  updatedAt: String
+}

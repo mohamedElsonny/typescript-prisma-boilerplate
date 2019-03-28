@@ -1,0 +1,8 @@
+# import Mutation.* from '../modules/auth/schema.graphql'
+
+type Query {
+  """
+  Test Message.
+  """
+  testMessage: String!
+}
